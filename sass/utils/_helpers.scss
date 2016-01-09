@@ -1,0 +1,32 @@
+/*--------------------------------------------------------------
+# Floats and Alignments
+--------------------------------------------------------------*/
+.clear {
+    @include clearfix;
+}
+
+.aligncenter {
+    @include center-block;
+}
+
+.alignleft {
+    @include floating-left;
+}
+
+.alignright {
+    @include floating-right;
+}
+
+/*--------------------------------------------------------------
+# Screen Reader Text
+--------------------------------------------------------------*/
+.screen-reader-text {
+    @include screen-reader;
+}
+
+/*--------------------------------------------------------------
+# Hide Elements
+--------------------------------------------------------------*/
+.invisible {
+    @include hide-element;
+}

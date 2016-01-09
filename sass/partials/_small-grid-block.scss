@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------
+# Small Grid Block
+--------------------------------------------------------------*/
+.small-grid-block {
+    @include reset-list;
+    @include grid-width($col-10-width);
+    @include center-block;
+    @include clearfix;
+    li {
+        @include floating-left;
+        margin: 0 (9 / 374) * 100% (9 / 374) * 100% 0;
+        width: (347 / 3) / 374 * 100%;
+        &:nth-of-type(3n) {
+            margin-right: 0;
+        }
+        @include breakpoint(412) {
+            margin: 0 (12 / 490) * 100% (12 / 490) * 100% 0;
+            width: (454 / 4) / 490 * 100%;
+            &:nth-of-type(3n) {
+                margin-right: (12 / 490) * 100%;
+            }
+            &:nth-of-type(4n) {
+                margin-right: 0;
+            }
+        }
+        @include breakpoint(540) {
+            margin: 0 ($col-gutter-width / $col-10-width) * 100% ($col-gutter-width / $col-10-width) * 100% 0;
+            width: $col-2-width / $col-10-width * 100%;
+            &:nth-of-type(3n),
+            &:nth-of-type(4n) {
+                margin-right: ($col-gutter-width / $col-10-width) * 100%;
+            }
+            &:nth-of-type(5n) {
+                margin-right: 0;
+            }
+        }
+    }
+}

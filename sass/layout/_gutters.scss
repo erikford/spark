@@ -1,0 +1,47 @@
+/*--------------------------------------------------------------
+# Small Chrome Gutter
+--------------------------------------------------------------*/
+.sm-chrome-gutter {
+    padding: px(5 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+    padding: rem(5 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+}
+
+/*--------------------------------------------------------------
+# Medium Chrome Gutter
+--------------------------------------------------------------*/
+.med-chrome-gutter {
+    padding: px(7 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+    padding: rem(7 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+    @include breakpoint(480) {
+        padding: px(14 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+        padding: rem(14 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+    }
+    @include breakpoint(640) {
+        padding: px(21 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+        padding: rem(21 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+    }
+}
+
+/*--------------------------------------------------------------
+# Large Chrome Gutter
+--------------------------------------------------------------*/
+.lrg-chrome-gutter {
+    padding: px(9 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+    padding: rem(9 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+    @include breakpoint(480) {
+        padding: px(18 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+        padding: rem(18 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+    }
+    @include breakpoint(640) {
+        padding: px(36 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+        padding: rem(36 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+    }
+    @include breakpoint(960) {
+        padding: px(72 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+        padding: rem(72 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter;
+    }
+    @include breakpoint(1440) {
+        padding: px(90 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter px(144 * $vertical-rhythm-multiple);
+        padding: rem(90 * $vertical-rhythm-multiple) $browser-chrome-fluid-gutter rem(144 * $vertical-rhythm-multiple);
+    }
+}

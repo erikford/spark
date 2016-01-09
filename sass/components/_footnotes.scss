@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------
+# Footnotes
+--------------------------------------------------------------*/
+.endnotes {
+    border-top: px(1 * $vertical-rhythm-multiple) solid $light-border-color;
+    margin-top: px(16 * $vertical-rhythm-multiple);
+    margin-top: rem(16 * $vertical-rhythm-multiple);
+    padding-top: px(5 * $vertical-rhythm-multiple);
+    padding-top: rem(5 * $vertical-rhythm-multiple);
+    ol {
+        @include typeset($small-font-size, (6 * $vertical-rhythm-multiple));
+    }
+}

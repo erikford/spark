@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+# Tables
+--------------------------------------------------------------*/
+table {
+    @include font-setting($font-family-alt, normal, 400);
+    @include typeset($base-font-size, (6 * $vertical-rhythm-multiple));
+    background-color: $white;
+    border: px(1 * $vertical-rhythm-multiple) solid $light-border-color;
+    margin: px($base-line-height) 0;
+    margin: rem($base-line-height) 0;
+    width: 100%;
+}
+
+caption {
+    @include typeset($header-4-size, (8 * $vertical-rhythm-multiple));
+    font-weight: 700;
+    margin-bottom: px(2 * $vertical-rhythm-multiple);
+    margin-bottom: rem(2 * $vertical-rhythm-multiple);
+}
+
+tbody tr:nth-of-type(2n) {
+    background-color: $gray-bg-color;
+}
+
+th {
+    border-left: 2px solid $light-border-color;
+    font-weight: 700;
+    padding: px(4 * $vertical-rhythm-multiple) px(5 * $vertical-rhythm-multiple);
+    padding: rem(4 * $vertical-rhythm-multiple) rem(5 * $vertical-rhythm-multiple);
+    text-align: left;
+    vertical-align: top;
+}
+
+td {
+    border-left: 2px solid $light-border-color;
+    border-top: 1px solid $light-border-color;
+    padding: px(4 * $vertical-rhythm-multiple) px(5 * $vertical-rhythm-multiple);
+    padding: rem(4 * $vertical-rhythm-multiple) rem(5 * $vertical-rhythm-multiple);
+    text-align: left;
+    vertical-align: top;
+}
+
+th:nth-of-type(1),
+td:nth-of-type(1) {
+    border-left: none;
+}

@@ -1,0 +1,45 @@
+/*--------------------------------------------------------------
+# Features Block
+--------------------------------------------------------------*/
+.features-block {
+    @include grid-width($col-6-width);
+    @include center-block;
+    @include clearfix;
+    text-align: left;
+    @include breakpoint(640) {
+        @include grid-width($col-12-width);
+    }
+}
+
+/*--------------------------------------------------------------
+# Feature Item
+--------------------------------------------------------------*/
+.feature-item {
+    @include floating-left;
+    margin-top: px(10 * $vertical-rhythm-multiple);
+    margin-top: rem(10 * $vertical-rhythm-multiple);
+    padding-left: px(42);
+    padding-left: rem(42);
+    @include breakpoint(640) {
+        margin-right: $col-gutter-width / $col-12-width * 100%;
+        margin-top: (2 * $col-gutter-width) / $col-12-width * 100%;
+        padding-right: $col-gutter-width / $col-12-width * 100%;
+        width: $col-6-width / $col-12-width * 100%;
+        &:nth-of-type(2n) {
+            margin-right: 0;
+        }
+    }
+    p {
+        font-size: px(18);
+        font-size: rem(18);
+        text-align: left;
+    }
+    [class^="icon-"], [class*=" icon-"] {
+        color: $brand-secondary-color;
+        font-size: px($header-2-size);
+        font-size: rem($header-2-size);
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+}

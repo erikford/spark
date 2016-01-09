@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+# Center Block
+--------------------------------------------------------------*/
+.center-block {
+    text-align: center;
+    h2 {
+        color: $marcomm-header-color;
+    }
+    p {
+        text-align: left;
+        @include breakpoint(460) {
+            text-align: center;
+        }
+    }
+}
+
+.dark-bg.center-block {
+    h2 {
+        color: $white;
+    }
+}
+
+/*--------------------------------------------------------------
+# Center Block Content
+--------------------------------------------------------------*/
+.center-block-content {
+    @include grid-width($col-6-width);
+    @include center-block;
+}

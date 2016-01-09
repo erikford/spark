@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+# Left Block
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Left Block Content
+--------------------------------------------------------------*/
+.left-block-content {
+    @include grid-width($col-12-width);
+    @include center-block;
+    h2, h3, p {
+        max-width: px($col-6-width);
+        max-width: rem($col-6-width);
+    }
+}
+
+/*--------------------------------------------------------------
+# Left Photo Background
+--------------------------------------------------------------*/
+.left-photo-bg {
+    background-image: url(../../assets/images/left_bg-1400x600.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

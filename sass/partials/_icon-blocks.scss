@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------
+# Demo Icon Block
+--------------------------------------------------------------*/
+.demo-icon-block {
+    text-align: center;
+    li {
+        background-color: $white;
+        border: px(3) solid $light-border-color;
+        border-radius: px(4);
+        border-radius: rem(4);
+        padding: px($base-line-height) px($base-line-height / 2);
+        padding: rem($base-line-height) px($base-line-height / 2);
+    }
+    [class^="icon-"], [class*=" icon-"] {
+        color: $brand-secondary-color;
+        font-size: px($header-2-size);
+        font-size: rem($header-2-size);
+    }
+    .demo-code {
+        @include truncate-text;
+        display: block;
+        font-family: $font-family-mono;
+        font-size: px(12);
+        font-size: rem(12);
+        margin-top: px(4 * $vertical-rhythm-multiple);
+        margin-top: rem(4 * $vertical-rhythm-multiple);
+    }
+}

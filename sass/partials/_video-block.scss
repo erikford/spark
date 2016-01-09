@@ -1,0 +1,9 @@
+/*--------------------------------------------------------------
+# Video Block
+--------------------------------------------------------------*/
+.vid-block {
+    @include grid-width($col-10-width);
+    @include center-block;
+    margin-bottom: px(9 * $vertical-rhythm-multiple);
+    margin-bottom: rem(9 * $vertical-rhythm-multiple);
+}

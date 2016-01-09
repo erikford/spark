@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+# Blockquote & Quote
+--------------------------------------------------------------*/
+blockquote {
+    background-color: $light-bg-color;
+    margin: px(10 * $vertical-rhythm-multiple) 0;
+    margin: rem(10 * $vertical-rhythm-multiple) 0;
+    padding: ((8 * $vertical-rhythm-multiple) / $content-width * 100%) ((12 * $vertical-rhythm-multiple) / $content-width * 100%) ((9 * $vertical-rhythm-multiple) / $content-width * 100%);
+    p {
+        @include typeset($header-3-size, (9 * $vertical-rhythm-multiple));
+        margin: px(9 * $vertical-rhythm-multiple) 0 0;
+        margin: rem(9 * $vertical-rhythm-multiple) 0 0;
+        quotes: '\201c' '\201d';
+        text-indent: -(px(9));
+        text-indent: -(rem(9));
+        &:first-child {
+            margin-top: 0;
+        }
+        &:first-child:before {
+            content: open-quote;
+        }
+        &:last-child:after {
+            content: close-quote;
+        }
+    }
+}

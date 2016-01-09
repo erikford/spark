@@ -1,0 +1,71 @@
+/*--------------------------------------------------------------
+# Post Pagination
+--------------------------------------------------------------*/
+.post-pagination {
+    @include font-setting($font-family-alt, normal, 400);
+    @include typeset($small-font-size, (5 * $vertical-rhythm-multiple));
+    border-top: 1px solid $light-border-color;
+    margin: px(24 * $vertical-rhythm-multiple) 0 0;
+    margin: rem(24 * $vertical-rhythm-multiple) 0 0;
+    padding: px(9 * $vertical-rhythm-multiple);
+    padding: rem(9 * $vertical-rhythm-multiple);
+}
+
+/*--------------------------------------------------------------
+# Archive Pagination
+--------------------------------------------------------------*/
+.pagination {
+    @include font-setting($font-family-alt, normal, 400);
+    border-top: 1px solid $light-border-color;
+    padding: px(9 * $vertical-rhythm-multiple) 0;
+    padding: rem(9 * $vertical-rhythm-multiple) 0;
+    .nav-links {
+        @include clearfix;
+        text-align: center;
+    }
+    .page-numbers {
+        background-color: $gray-bg-color;
+        border-radius: px(3);
+        border-radius: rem(3);
+        color: $text-color;
+        display: inline-block;
+        left: -9999em;
+        line-height: leading(7 * $vertical-rhythm-multiple, $base-font-size);
+        margin: 0 px(1 * $vertical-rhythm-multiple);
+        margin: 0 rem(1 * $vertical-rhythm-multiple);
+        padding: rem(2 * $vertical-rhythm-multiple) em(3 * $vertical-rhythm-multiple);
+        position: absolute;
+        top: -9999em;
+        &:hover, &:active {
+            background-color: $primary-button-color;
+            color: $primary-button-text-color;
+        }
+    }
+    .prev, .next {
+        left: auto;
+        position: relative;
+        top: auto;
+    }
+    .prev {
+        @include floating-left;
+        margin-left: 0;
+    }
+    .next {
+        @include floating-right;
+        margin-right: 0;
+    }
+}
+
+.page-numbers.dots,
+.page-numbers.dots:hover {
+    background-color: transparent;
+    color: $text-color;
+}
+
+@include breakpoint(490) {
+    .pagination .page-numbers {
+        left: auto;
+        position: relative;
+        top: auto;
+    }
+}

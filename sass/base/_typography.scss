@@ -1,0 +1,59 @@
+/*--------------------------------------------------------------
+# Global
+--------------------------------------------------------------*/
+body {
+    @include font-setting($font-family, normal, 400);
+    color: $text-color;
+}
+
+/*--------------------------------------------------------------
+# Headers
+--------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font-family;
+}
+
+h1 {
+    @include typeset($header-1-size, (17 * $vertical-rhythm-multiple));
+    margin-bottom: px($header-1-size / $vertical-rhythm-multiple);
+    margin-bottom: rem($header-1-size / $vertical-rhythm-multiple);
+}
+
+h2 {
+    @include typeset($header-2-size, (14 * $vertical-rhythm-multiple));
+    margin-bottom: px(($header-2-size / $vertical-rhythm-multiple) * 2);
+    margin-bottom: px(($header-2-size / $vertical-rhythm-multiple) * 2);
+}
+
+h3 {
+    @include typeset($header-3-size, (8 * $vertical-rhythm-multiple));
+    margin-bottom: px(6);
+    margin-bottom: rem(6);
+}
+
+h4 {
+    @include typeset($header-4-size, (7 * $vertical-rhythm-multiple));
+    margin-bottom: px(4);
+    margin-bottom: rem(4);
+}
+
+h5 {
+    @include typeset($header-5-size, (6 * $vertical-rhythm-multiple));
+    margin-bottom: px(2);
+    margin-bottom: rem(2);
+}
+
+h6 {
+    @include typeset($header-6-size, (5 * $vertical-rhythm-multiple));
+    margin-bottom: px(2);
+    margin-bottom: rem(2);
+}
+
+/*--------------------------------------------------------------
+# Paragraph
+--------------------------------------------------------------*/
+p {
+    @include typeset($base-font-size, $base-line-height);
+    margin-bottom: px($base-line-height);
+    margin-bottom: rem($base-line-height);
+}

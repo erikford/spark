@@ -1,0 +1,61 @@
+/*--------------------------------------------------------------
+# Images
+--------------------------------------------------------------*/
+img.alignleft,
+img.alignright {
+    max-width: 40%;
+}
+
+img.alignleft {
+    margin: px(2 * $vertical-rhythm-multiple) px(5 * $vertical-rhythm-multiple) px(3 * $vertical-rhythm-multiple) 0;
+    margin: rem(2 * $vertical-rhythm-multiple) rem(5 * $vertical-rhythm-multiple) rem(3 * $vertical-rhythm-multiple) 0;
+}
+
+img.alignright {
+    margin: px(2 * $vertical-rhythm-multiple) 0 px(3 * $vertical-rhythm-multiple) px(5 * $vertical-rhythm-multiple);
+    margin: rem(2 * $vertical-rhythm-multiple) 0 rem(3 * $vertical-rhythm-multiple) rem(5 * $vertical-rhythm-multiple);
+}
+
+img.wp-smiley {
+    display: inline;
+}
+
+/*--------------------------------------------------------------
+# Figure & Captioned Images
+--------------------------------------------------------------*/
+figure {
+    margin-bottom: px($base-line-height);
+    margin-bottom: rem($base-line-height);
+}
+
+figcaption,
+.wp-caption-text {
+    @include typeset($small-font-size, (5 * $vertical-rhythm-multiple));
+    font-style: italic;
+    padding: px(2 * $vertical-rhythm-multiple) px(2 * $vertical-rhythm-multiple) 0;
+    padding: rem(2 * $vertical-rhythm-multiple) rem(2 * $vertical-rhythm-multiple) 0;
+    text-align: left;
+}
+
+figure.alignleft,
+figure.alignright {
+    max-width: 40%;
+}
+
+figure.alignleft {
+    margin: px(2 * $vertical-rhythm-multiple) px(5 * $vertical-rhythm-multiple) px(3 * $vertical-rhythm-multiple) 0;
+    margin: rem(2 * $vertical-rhythm-multiple) rem(5 * $vertical-rhythm-multiple) rem(3 * $vertical-rhythm-multiple) 0;
+}
+
+figure.alignright {
+    margin: px(2 * $vertical-rhythm-multiple) 0 px(3 * $vertical-rhythm-multiple) px(5 * $vertical-rhythm-multiple);
+    margin: rem(2 * $vertical-rhythm-multiple) 0 rem(3 * $vertical-rhythm-multiple) rem(5 * $vertical-rhythm-multiple);
+}
+
+figure.aligncenter img {
+    @include center-block;
+}
+
+figure.aligncenter .wp-caption-text {
+    text-align: center;
+}

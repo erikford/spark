@@ -1,0 +1,55 @@
+/*--------------------------------------------------------------
+# Image Galleries
+--------------------------------------------------------------*/
+.gallery {
+    @include clearfix;
+    margin-bottom: px($base-line-height);
+    margin-bottom: rem($base-line-height);
+}
+
+.gallery-item {
+    @include floating-left;
+    margin: 1% 0;
+    padding: 0 1%;
+}
+
+.gallery-icon a {
+    border: none;
+}
+
+.gallery-columns-1 .gallery-item {
+    padding-right: 0;
+    width: 100%;
+}
+
+gallery-columns-2 .gallery-item {
+    width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+    width: 33.333%;
+}
+
+.gallery-columns-4 .gallery-item {
+    width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+    width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+    width: 16.666%;
+}
+
+.gallery-columns-7 .gallery-item {
+    width: 14.2856%;
+}
+
+.gallery-columns-8 .gallery-item {
+    width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+    width: 11.111%;
+}

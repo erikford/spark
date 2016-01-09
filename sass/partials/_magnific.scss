@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+# Container
+--------------------------------------------------------------*/
+.mfp-container {
+    padding-left: $flex-gutter-width;
+    padding-right: $flex-gutter-width;
+}
+
+/*--------------------------------------------------------------
+# iFrame
+--------------------------------------------------------------*/
+.mfp-iframe-scaler {
+    overflow: visible;
+}
+
+.mfp-iframe-holder {
+    .mfp-close {
+        height: px(30);
+        padding-right: 0;
+        right: 0;
+        text-align: center;
+        top: -(px(42));
+        width: px(30);
+    }
+}
+
+/*--------------------------------------------------------------
+# Close Button
+--------------------------------------------------------------*/
+.mfp-close {
+    border: px(2) solid !important;
+    border-radius: 100%;
+    font-size: px(10);
+    line-height: 1;
+    &:before {
+        content: '\e902';
+        display: block;
+        font-family: $icon-font-family;
+    }
+}

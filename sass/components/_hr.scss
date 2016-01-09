@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------
+# Horizontal Rule
+--------------------------------------------------------------*/
+hr {
+    background-color: $gray-border-color;
+    border: none;
+    color: $gray-border-color;
+    display: block;
+    height: px($vertical-rhythm-multiple);
+    margin: px(10 * $vertical-rhythm-multiple) 0;
+    margin: rem(10 * $vertical-rhythm-multiple) 0;
+    text-align: left;
+}

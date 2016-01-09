@@ -1,0 +1,97 @@
+// Float Right
+@mixin floating-right {
+    float: right;
+}
+
+// Float Left
+@mixin floating-left {
+    float: left;
+}
+
+// Clearfix
+@mixin clearfix {
+    &::after {
+        clear: both;
+        content: "";
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+// Center Block
+@mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Screen Reader
+@mixin screen-reader {
+    left: -9999em;
+    position: absolute;
+    top: -9999em;
+}
+
+// Hide Element
+@mixin hide-element {
+    display: none;
+}
+
+// Font Setting
+@mixin font-setting($family, $style, $weight) {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+}
+
+// Typset
+@mixin typeset($size, $leading) {
+    font-size: px($size);
+    font-size: rem($size);
+    line-height: leading($leading, $size);
+}
+
+// Grid Width
+@mixin grid-width($size) {
+    max-width: px($size);
+    max-width: rem($size);
+}
+
+// Responsive Breakpoint
+@mixin breakpoint($size) {
+    @media only screen and (min-width: em($size)) {
+        @content
+    }
+}
+
+// Reset List
+@mixin reset-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+// Truncate Text
+@mixin truncate-text {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+// Truncate Text Scroll
+@mixin truncate-text-scroll {
+    display: block;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+// Appearance
+@mixin appearance($target) {
+    -webkit-appearance: $target;
+       -moz-appearance: $target;
+         -o-appearance: $target;
+}

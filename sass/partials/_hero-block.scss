@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+# Hero Block
+--------------------------------------------------------------*/
+.hero-block {
+    background-image: url(../../assets/images/hero-1400x1050.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    text-align: center;
+    &:before {
+        background-color: rgba($secondary-bg-color, 0.65);
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+/*--------------------------------------------------------------
+# Hero Block Content
+--------------------------------------------------------------*/
+.hero-block-content {
+    @include grid-width($col-6-width);
+    @include center-block;
+    h1 {
+        @include typeset(18 * $vertical-rhythm-multiple, 20 * $vertical-rhythm-multiple);
+        font-weight: 300;
+    }
+    p {
+        @include typeset($header-2-size, 14 * $vertical-rhythm-multiple);
+        font-weight: 300;
+    }
+    .button {
+        font-size: px($header-4-size);
+        font-size: rem($header-4-size);
+    }
+}

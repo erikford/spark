@@ -1,0 +1,24 @@
+/*--------------------------------------------------------------
+# Preformatted Text
+--------------------------------------------------------------*/
+pre {
+    background-color: $gray-bg-color;
+    border-radius: px(5);
+    font-size: 80%;
+    line-height: 1.6025;
+    margin: px($base-line-height) 0;
+    margin: rem($base-line-height) 0;
+    overflow: auto;
+    overflow-y: hidden;
+    padding: px(8 * $vertical-rhythm-multiple);
+    padding: rem(8 * $vertical-rhythm-multiple);
+    white-space: pre;
+    code {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        font-size: inherit;
+        line-height: inherit;
+        padding: 0;
+    }
+}

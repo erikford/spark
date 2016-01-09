@@ -1,0 +1,163 @@
+/*--------------------------------------------------------------
+# Browser Reset
+--------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+
+html,
+body {
+    background-color: $body-bg;
+}
+
+html {
+    font-size: 80%;
+    @include breakpoint(760) {
+        font-size: 100%;
+    }
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+}
+
+body, html, div, blockquote, img, label, p, a, h1, h2, h3, h4, h5, h6, pre, ul,
+ol, li, dl, dt, dd, form, fieldset, input, th, td, figure {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header,
+hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+img,
+video {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+a, :focus {
+    outline: 0;
+}
+
+a {
+    background-color: transparent;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+a, a:visited {
+    color: $link-color;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: $link-color-hover;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+button::-moz-focus-inner {
+    border: none;
+    padding: 0;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+
+q {
+    quotes: '\201c' '\201d' '\2018' '\2019';
+}
+
+q:before,
+q q:before {
+    content: open-quote;
+}
+
+q:after,
+q q:after {
+    content: close-quote;
+}
+
+strong, b {
+    font-weight: 700;
+}
+
+em, i,
+cite {
+    font-style: italic;
+}
+
+small {
+    font-size: px(12);
+    font-size: rem(12);
+    line-height: inherit;
+}
+
+mark {
+    background-color: #ffffd9;
+    color: inherit;
+}
+
+strike, del {
+    color: $seventy-percent-gray;
+    text-decoration: line-through;
+}
+
+ins {
+    border-bottom: 1px dotted;
+    text-decoration: none;
+}
+
+abbr, acronym {
+    border-bottom: 1px dotted;
+    cursor: help;
+    text-transform: uppercase;
+}
+
+sup, sub {
+    font-size: px(14);
+    font-size: rem(14);
+    line-height: 1;
+    vertical-align: baseline;
+}
+
+sup {
+    top: px(7);
+    top: rem(7);
+}
+
+sub {
+    bottom: px(4);
+    bottom: rem(4);
+}
+
+address {
+    font-style: normal;
+}

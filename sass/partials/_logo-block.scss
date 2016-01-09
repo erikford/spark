@@ -1,0 +1,24 @@
+/*--------------------------------------------------------------
+# Logo Block
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Logo Banner
+--------------------------------------------------------------*/
+.logo-banner {
+    @include reset-list;
+    @include grid-width($col-12-width);
+    @include center-block;
+    margin-bottom: 0;
+    text-align: center;
+    li {
+        display: inline-block;
+        margin: px(3 * $vertical-rhythm-multiple) px(5 * $vertical-rhythm-multiple);
+        margin: rem(3 * $vertical-rhythm-multiple) rem(5 * $vertical-rhythm-multiple);
+        img {
+            height: 24px;
+            width: auto;
+        }
+    }
+}

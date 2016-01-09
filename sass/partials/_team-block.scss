@@ -1,0 +1,31 @@
+/*--------------------------------------------------------------
+# Team Block
+--------------------------------------------------------------*/
+.team-block {
+    @include reset-list;
+    @include grid-width($col-10-width);
+    @include center-block;
+    text-align: center;
+    li {
+        display: inline-block;
+        margin: (($col-gutter-width / 2) / $col-10-width) * 100%;
+        width: ($col-2-width / $col-6-width) * 100%;
+        @include breakpoint(440) {
+            width: ($col-2-width / $col-8-width) * 100%;
+        }
+        @include breakpoint(520) {
+            width: ($col-2-width / $col-10-width) * 100%;
+        }
+    }
+    span {
+        @include typeset($small-font-size, 6 * $vertical-rhythm-multiple);
+        @include truncate-text;
+        display: block;
+        text-align: left;
+    }
+    .team-name {
+        font-weight: 900;
+        margin-top: px(2 * $vertical-rhythm-multiple);
+        margin-top: rem(2 * $vertical-rhythm-multiple);
+    }
+}

@@ -1,0 +1,130 @@
+// Black and White
+$black: #000;
+$white: #fff;
+
+// Grayscale
+$twenty-percent-gray: lighten($black, 20%);
+$thirty-percent-gray: lighten($black, 30%);
+$forty-percent-gray: lighten($black, 40%);
+$middle-gray: lighten($black, 50%);
+$sixty-percent-gray: lighten($black, 60%);
+$seventy-percent-gray: lighten($black, 70%);
+$eigthy-percent-gray: lighten($black, 80%);
+$ninety-percent-gray: lighten($black, 90%);
+
+// Alpha Transparent Black
+$alpha-ten-black: rgba($black, 0.1);
+$alpha-twenty-black: rgba($black, 0.2);
+$alpha-thirty-black: rgba($black, 0.3);
+$alpha-forty-black: rgba($black, 0.4);
+$alpha-fifty-black: rgba($black, 0.5);
+$alpha-sixty-black: rgba($black, 0.6);
+$alpha-seventy-black: rgba($black, 0.7);
+$alpha-eighty-black: rgba($black, 0.8);
+$alpha-ninety-black: rgba($black, 0.9);
+
+// Alpha Transparent White
+$alpha-ten-white: rgba($white, 0.1);
+$alpha-twenty-white: rgba($white, 0.2);
+$alpha-thirty-white: rgba($white, 0.3);
+$alpha-forty-white: rgba($white, 0.4);
+$alpha-fifty-white: rgba($white, 0.5);
+$alpha-sixty-white: rgba($white, 0.6);
+$alpha-seventy-white: rgba($white, 0.7);
+$alpha-eighty-white: rgba($white, 0.8);
+$alpha-ninety-white: rgba($white, 0.9);
+
+// Brand Color Values
+$brand-color: #af8506;
+$brand-secondary-color: #2474a9;
+$brand-tertiary-color: #17b890;
+
+// Brand Dark Color Values
+$brand-color-dark: darken($brand-color, 20%);
+$brand-secondary-color-dark: darken($brand-secondary-color, 20%);
+$brand-tertiary-color-dark: darken($brand-tertiary-color, 20%);
+
+// Text Colors
+$text-color: #555;
+$light-text-color: #888;
+$marcomm-header-color: $brand-secondary-color;
+
+// Link Colors
+$link-color: $brand-secondary-color;
+$link-color-hover: lighten($brand-secondary-color, 15%);
+
+// Button Colors
+$primary-button-color: $brand-tertiary-color;
+$primary-button-color-hover: lighten($brand-tertiary-color, 5%);
+$primary-button-text-color: $white;
+$primary-button-text-color-hover: $white;
+$secondary-button-color: $brand-secondary-color;
+$secondary-button-color-hover: lighten($brand-secondary-color, 10%);
+$secondary-button-text-color: $white;
+$secondary-button-text-color-hover: $white;
+
+// Background Colors
+$body-bg: $white;
+$primary-bg-color: $brand-color-dark;
+$secondary-bg-color: $brand-secondary-color-dark;
+$tertiary-bg-color: $brand-tertiary-color-dark;
+$light-bg-color: #f6f6f6;
+$dark-bg-color: #333;
+$gray-bg-color: $ninety-percent-gray;
+
+// Border Colors
+$light-border-color: #ddd;
+$dark-border-color: red;
+$gray-border-color: $eigthy-percent-gray;
+
+// Message Colors
+$stop-color: red;
+$warning-color: yellow;
+$success-color: green;
+
+// Font Families
+$font-family: 'Source Sans Pro', sans-serif;
+$font-family-alt: $font-family;
+$font-family-mono: ('Consolas', Courier, monospace);
+$header-font-family: $font-family;
+$icon-font-family: 'Sparkicons';
+
+// Typography
+// Typographic Scale = 1.250 Major Third
+$base-font-size: 20;
+$small-font-size: 14;
+$base-line-height: 30;
+$vertical-rhythm-multiple: 3;
+$header-1-size: 39;
+$header-2-size: 31;
+$header-3-size: 25;
+$header-4-size: 20;
+$header-5-size: 16;
+$header-6-size: $small-font-size;
+
+// Column Widths
+$col-12-width: 1200;
+$col-11-width: 1098;
+$col-10-width: 996;
+$col-9-width: 894;
+$col-8-width: 792;
+$col-7-width: 690;
+$col-6-width: 588;
+$col-5-width: 486;
+$col-4-width: 384;
+$col-3-width: 282;
+$col-2-width: 180;
+$col-1-width: 78;
+$col-gutter-width: 24;
+$browser-chrome-fluid-gutter: (5 * $vertical-rhythm-multiple) / 320 * 100%;
+
+// Flexible Column Widths (percentage)
+$flex-col-8-width: $col-8-width / $col-12-width * 100%;
+$flex-col-6-width: $col-6-width / $col-12-width * 100%;
+$flex-col-4-width: $col-4-width / $col-12-width * 100%;
+$flex-col-3-width: $col-3-width / $col-12-width * 100%;
+$flex-col-2-width: $col-2-width / $col-12-width * 100%;
+$flex-gutter-width: $col-gutter-width / $col-12-width * 100%;
+
+// Content Width
+$content-width: $col-6-width;

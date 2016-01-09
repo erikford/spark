@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+# Right Block Container
+--------------------------------------------------------------*/
+.right-block-container {
+    @include grid-width($col-12-width);
+    @include center-block;
+    @include clearfix;
+}
+
+/*--------------------------------------------------------------
+# Right Block Content
+--------------------------------------------------------------*/
+.right-block-content {
+    @include grid-width($col-6-width);
+    @include floating-right;
+}
+
+/*--------------------------------------------------------------
+# Right Photo Background
+--------------------------------------------------------------*/
+.right-photo-bg {
+    background-image: url(../../assets/images/right_bg-1400x600.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,69 @@
+/*--------------------------------------------------------------
+# Ordered, Unordered, & Definition Lists
+--------------------------------------------------------------*/
+ul, ol, dl {
+    @include typeset($base-font-size, $base-line-height);
+    margin-bottom: px($base-line-height);
+    margin-bottom: rem($base-line-height);
+}
+
+ul {
+    list-style: disc;
+    padding-left: px(6 * $vertical-rhythm-multiple);
+    padding-left: rem(6 * $vertical-rhythm-multiple);
+    @include breakpoint(600) {
+        padding-left: 0;
+    }
+}
+
+ul ul, ol ul {
+    list-style: circle;
+}
+
+ol {
+    list-style: decimal;
+    padding-left: px(8 * $vertical-rhythm-multiple);
+    padding-left: rem(8 * $vertical-rhythm-multiple);
+    @include breakpoint(600) {
+        padding-left: 0;
+    }
+}
+
+ul ol, ol ol {
+    list-style: lower-alpha;
+}
+
+ol ol ol {
+    list-style: decimal;
+}
+
+ul ul, ol ul, ul ol, ol ol {
+    font-size: inherit;
+    margin: px(3 * $vertical-rhythm-multiple);
+    margin: rem(3 * $vertical-rhythm-multiple) 0;
+}
+
+ul ul, ol ul {
+    padding-left: px(6 * $vertical-rhythm-multiple);
+    padding-left: rem(6 * $vertical-rhythm-multiple);
+}
+
+ul ol, ol ol {
+    padding-left: px(8 * $vertical-rhythm-multiple);
+    padding-left: rem(8 * $vertical-rhythm-multiple);
+}
+
+dt {
+    @include font-setting($font-family-alt, normal, 700);
+    font-size: inherit;
+}
+
+li {
+    margin-bottom: px(3 * $vertical-rhythm-multiple);
+    margin-bottom: rem(3 * $vertical-rhythm-multiple);
+}
+
+dd {
+    margin-bottom: px(9 * $vertical-rhythm-multiple);
+    margin-bottom: rem(9 * $vertical-rhythm-multiple);
+}

@@ -1,0 +1,74 @@
+/*--------------------------------------------------------------
+# Social Block
+--------------------------------------------------------------*/
+.social-block {
+    @include reset-list;
+    @include grid-width($col-6-width);
+    @include center-block;
+    text-align: center;
+    li {
+        display: inline-block;
+        margin: px(4);
+        margin: rem(4);
+        a, a:visited {
+            @include typeset(24, 48);
+            border: px(2) solid;
+            border-radius: 100%;
+            color: $light-text-color;
+            display: block;
+            width: px(54);
+            width: rem(54);
+            &:before {
+                font-family: $icon-font-family;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        }
+        a:hover, a:active {
+            background-color: $primary-button-color;
+            border-color: $primary-button-color;
+            color: $white;
+        }
+        a[href*='twitter.com']:before {
+            content: '\e637';
+        }
+        a[href*='facebook.com']:before {
+            content: '\e631';
+        }
+        a[href*='pinterest.com']:before {
+            content: '\e636';
+        }
+        a[href*='flickr.com']:before {
+            content: '\e632';
+        }
+        a[href*='angellist.com']:before {
+            content: '\e60a';
+        }
+        a[href*='plus.google.com']:before {
+            content: '\e60c';
+        }
+        a[href*='instagram.com']:before {
+            content: '\e635';
+        }
+        a[href*='vimeo.com']:before {
+            content: '\e638';
+        }
+        a[href*='youtube.com']:before {
+            content: '\e639';
+        }
+        a[href*='dribbble.com']:before {
+            content: '\e64f';
+        }
+        a[href*='github.com']:before {
+            content: '\e650';
+        }
+        a[href*='linkedin.com']:before {
+            content: '\e608';
+        }
+        a[href*='path.com']:before {
+            content: '\e611';
+        }
+        a[href='rdio.com']:before {
+            content: '\e614';
+        }
+    }
+}

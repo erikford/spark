@@ -1,0 +1,18 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+    text-align: center;
+    p {
+        font-size: px($small-font-size);
+        font-size: rem($small-font-size);
+        margin-bottom: 0;
+    }
+    .icon-heart {
+        color: #b8173d;
+        margin: 0 px(2);
+        margin: 0 rem(2);
+        top: px(1);
+        top: rem(1);
+    }
+}

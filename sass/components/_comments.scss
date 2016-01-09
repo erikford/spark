@@ -1,0 +1,93 @@
+/*--------------------------------------------------------------
+# Comments
+--------------------------------------------------------------*/
+.comments-head {
+    margin-bottom: px(9 * $vertical-rhythm-multiple);
+    margin-bottom: rem(9 * $vertical-rhythm-multiple);
+}
+
+.commentlist {
+    @include font-setting($font-family-alt, normal, 400);
+    @include reset-list;
+    border-bottom: px(1 * $vertical-rhythm-multiple) solid $light-border-color;
+    line-height: leading((7 * $vertical-rhythm-multiple), 16);
+    margin-bottom: px(16 * $vertical-rhythm-multiple);
+    margin-bottom: rem(16 * $vertical-rhythm-multiple);
+    padding-bottom: px(16 * $vertical-rhythm-multiple);
+    padding-bottom: rem(16 * $vertical-rhythm-multiple);
+    li {
+        margin: 0;
+    }
+    .comment-respond {
+        margin: px(8 * $vertical-rhythm-multiple) 0;
+        margin: rem(8 * $vertical-rhythm-multiple) 0;
+    }
+    .comment-respond .comment-reply-title {
+        small {
+            font-size: px($small-font-size);
+            font-size: rem($small-font-size);
+            margin-left: px(4 * $vertical-rhythm-multiple);
+            margin-left: rem(4 * $vertical-rhythm-multiple);
+        }
+    }
+}
+
+.comment-author {
+    border-bottom: px(1) solid $light-border-color;
+    border-top: px(1 * $vertical-rhythm-multiple) solid $light-border-color;
+    margin-bottom: px(4 * $vertical-rhythm-multiple);
+    margin-bottom: rem(4 * $vertical-rhythm-multiple);
+    padding: px(5 * $vertical-rhythm-multiple) 0 px(5 * $vertical-rhythm-multiple) px(20 * $vertical-rhythm-multiple);
+    padding: rem(5 * $vertical-rhythm-multiple) 0 rem(5 * $vertical-rhythm-multiple) rem(20 $vertical-rhythm-multiple);
+    .avatar {
+        border-radius: 200%;
+        left: 0;
+        position: absolute;
+        top: px(16);
+        top: rem(16);
+        width: px(50);
+        width: rem(50);
+    }
+    address {
+        @include font-setting($font-family-alt, normal, 700);
+    }
+    time {
+        @include typeset($small-font-size, (5 * $vertical-rhythm-multiple));
+    }
+}
+
+.comment-body {
+    margin-bottom: px(16 * $vertical-rhythm-multiple);
+    margin-bottom: rem(16 * $vertical-rhythm-multiple);
+}
+
+.children {
+    @include reset-list;
+    border-left: px(1) solid $light-border-color;
+    margin: 0;
+    padding-left: (10 * $vertical-rhythm-multiple) / $content-width * 100%;
+}
+
+.comment-body {
+    p {
+        line-height: inherit;
+        margin-bottom: px(5 * $vertical-rhythm-multiple);
+        margin-bottom: rem(5 * $vertical-rhythm-multiple);
+    }
+    code {
+        background-color: $white;
+    }
+    blockquote {
+        background-color: transparent;
+        margin-bottom: px(5 * $vertical-rhythm-multiple);
+        margin-bottom: rem(5 * $vertical-rhythm-multiple);
+        margin-top: px(5 * $vertical-rhythm-multiple);
+        margin-top: rem(5 * $vertical-rhythm-multiple);
+        padding-bottom: 0;
+        padding-top: 0;
+        p {
+            font-size: px($header-4-size);
+            font-size: rem($header-4-size);
+        }
+    }
+}

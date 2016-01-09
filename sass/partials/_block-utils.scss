@@ -1,0 +1,44 @@
+/*--------------------------------------------------------------
+# Marcomm Content
+--------------------------------------------------------------*/
+.marcomm-content {
+    h2 {
+        @include typeset($header-1-size, 15 * $vertical-rhythm-multiple);
+        font-weight: 300;
+    }
+    .center-cta {
+        text-align: center;
+    }
+}
+
+/*--------------------------------------------------------------
+# Light Background
+--------------------------------------------------------------*/
+.light-bg {
+    background-color: $light-bg-color;
+}
+
+/*--------------------------------------------------------------
+# Dark Background
+--------------------------------------------------------------*/
+.dark-bg {
+    background-color: $dark-bg-color;
+    color: $light-text-color;
+}
+
+/*--------------------------------------------------------------
+# Photo Background
+--------------------------------------------------------------*/
+.photo-bg {
+    color: $white;
+    &:before {
+        background-color: rgba($secondary-bg-color, 0.65);
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
