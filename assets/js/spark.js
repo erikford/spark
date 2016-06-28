@@ -38,11 +38,12 @@
         $('.scroll-to').click(function(e) {
             e.preventDefault();
 
+            var outer_height  = $('header[role="banner"]').first().outerHeight();
             var full_url      = this.href;
             var parts         = full_url.split('#');
             var trgt          = parts[1];
             var target_offset = $('#' + trgt).offset();
-            var target_top    = target_offset.top;
+            var target_top    = target_offset.top - outer_height;
 
             $('html, body').animate({scrollTop:target_top}, 500);
         });
